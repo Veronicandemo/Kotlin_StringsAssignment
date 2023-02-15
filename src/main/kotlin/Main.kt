@@ -1,7 +1,7 @@
 fun main() {
     printsChars()
     println(takesstring("My name is Veronica.I am a student at AkiraChix"))
-    takesName("Nelson")
+    takesName("Marion")
     println(takesparams("Ndemo Veronica",21))
 
 }
@@ -27,11 +27,11 @@ fun takesstring(string: String): Int{
     return (theString.length)
 }
 
-fun  takesName(name: String): Unit{
-    var mainString = if (name.equals("Veronica")) {
+fun  takesName(name: String){
+    var myName = "Veronica"
+    if (name.equals(myName)) {
         println("Thats me")
     } else {
         println("I don't know who that is")
     }
-    return mainString
 }
